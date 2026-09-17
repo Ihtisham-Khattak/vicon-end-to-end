@@ -1,0 +1,30 @@
+{
+  "name": "vicon-playwright-e2e",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript End-to-End Test Suite for Metodo Vicon",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test tests/e2e/smoke.spec.ts",
+    "test:auth": "playwright test tests/e2e/auth.spec.ts",
+    "test:learn": "playwright test tests/e2e/learn.spec.ts",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "testing",
+    "metodovicon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.2"
+  }
+}
